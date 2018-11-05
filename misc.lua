@@ -92,17 +92,6 @@ minetest.register_craft({
 	cooktime = 8
 })
 
-minetest.register_craft( {
-	type = "shapeless",
-	output = "basic_materials:terracotta_base 8",
-	recipe = {
-		"default:dirt",
-		"default:clay_lump",
-		"bucket:bucket_water"
-	},
-	replacements = { {"bucket:bucket_water", "bucket:bucket_empty"}, },
-})
-
 -- aliases
 
 minetest.register_alias("homedecor:oil_extract",      "basic_materials:oil_extract")
