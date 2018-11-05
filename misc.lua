@@ -98,7 +98,6 @@ minetest.register_alias("homedecor:oil_extract",      "basic_materials:oil_extra
 minetest.register_alias("homedecor:paraffin",         "basic_materials:paraffin")
 minetest.register_alias("homedecor:plastic_base",     "basic_materials:paraffin")
 minetest.register_alias("homedecor:terracotta_base",  "basic_materials:terracotta_base")
-minetest.register_alias("homedecor:power_crystal",    "basic_materials:energy_crystal")
 
 minetest.register_alias("gloopblocks:wet_cement",     "basic_materials:wet_cement")
 minetest.register_alias("gloopblocks:cement",         "basic_materials:cement_block")
