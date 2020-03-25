@@ -246,6 +246,15 @@ minetest.register_craft( {
 })
 
 minetest.register_craft( {
+    output = "basic_materials:brass_ingot 9",
+    recipe = {
+	{"default:copper_ingot", "default:tin_ingot", "default:copper_ingot"},
+	{"default:steel_ingot", "default:copper_ingot", "default:steel_ingot"},
+	{"default:copper_ingot", "default:tin_ingot", "default:copper_ingot"},
+    },
+})
+
+minetest.register_craft( {
 	type = "shapeless",
 	output = "basic_materials:brass_ingot 9",
 	recipe = { "basic_materials:brass_block" },
