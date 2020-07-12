@@ -5,31 +5,37 @@ local S = minetest.get_translator("basic_materials")
 
 minetest.register_craftitem("basic_materials:steel_wire", {
 	description = S("Spool of steel wire"),
+	groups = { wire = 1 },
 	inventory_image = "basic_materials_steel_wire.png"
 })
 
 minetest.register_craftitem("basic_materials:copper_wire", {
 	description = S("Spool of copper wire"),
+	groups = { wire = 1 },
 	inventory_image = "basic_materials_copper_wire.png"
 })
 
 minetest.register_craftitem("basic_materials:silver_wire", {
 	description = S("Spool of silver wire"),
+	groups = { wire = 1 },
 	inventory_image = "basic_materials_silver_wire.png"
 })
 
 minetest.register_craftitem("basic_materials:gold_wire", {
 	description = S("Spool of gold wire"),
+	groups = { wire = 1 },
 	inventory_image = "basic_materials_gold_wire.png"
 })
 
 minetest.register_craftitem("basic_materials:steel_strip", {
 	description = S("Steel Strip"),
+	groups = { strip = 1 },
 	inventory_image = "basic_materials_steel_strip.png"
 })
 
 minetest.register_craftitem("basic_materials:copper_strip", {
 	description = S("Copper Strip"),
+	groups = { strip = 1 },
 	inventory_image = "basic_materials_copper_strip.png"
 })
 
@@ -40,11 +46,13 @@ minetest.register_craftitem("basic_materials:steel_bar", {
 
 minetest.register_craftitem("basic_materials:chainlink_brass", {
 	description = S("Chainlinks (brass)"),
+	groups = { chainlinks = 1 },
 	inventory_image = "basic_materials_chainlink_brass.png"
 })
 
 minetest.register_craftitem("basic_materials:chainlink_steel", {
 	description = S("Chainlinks (steel)"),
+	groups = { chainlinks = 1 },
 	inventory_image = "basic_materials_chainlink_steel.png"
 })
 
