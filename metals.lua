@@ -70,14 +70,6 @@ local chains_sbox = {
 	fixed = { -0.1, -0.5, -0.1, 0.1, 0.5, 0.1 }
 }
 
-local topchains_sbox = {
-	type = "fixed",
-	fixed = {
-		{ -0.25, 0.35, -0.25, 0.25, 0.5, 0.25 },
-		{ -0.1, -0.5, -0.1, 0.1, 0.4, 0.1 }
-	}
-}
-
 minetest.register_node("basic_materials:chain_steel", {
 	description = S("Chain (steel, hanging)"),
 	drawtype = "mesh",
