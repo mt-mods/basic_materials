@@ -9,7 +9,7 @@ local modpath = minetest.get_modpath("basic_materials")
 basic_materials = {}
 basic_materials.mod = { author = "Vanessa Dannenberg" }
 
-dofile(modpath.."/metals.lua")
-dofile(modpath.."/plastics.lua")
-dofile(modpath.."/electrical-electronic.lua")
-dofile(modpath.."/misc.lua")
+dofile(modpath .. "/nodes.lua")
+dofile(modpath .. "/craftitems.lua")
+dofile(modpath .. "/crafts.lua")
+dofile(modpath .. "/aliases.lua")
