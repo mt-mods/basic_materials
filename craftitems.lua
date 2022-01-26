@@ -16,8 +16,6 @@ minetest.register_craftitem("basic_materials:empty_spool", {
 	inventory_image = "basic_materials_empty_spool.png"
 })
 
-
-
 minetest.register_craftitem("basic_materials:oil_extract", {
 	description = S("Oil extract"),
 	inventory_image = "basic_materials_oil_extract.png",
@@ -37,8 +35,6 @@ minetest.register_craftitem("basic_materials:wet_cement", {
 	description = S("Wet Cement"),
 	inventory_image = "basic_materials_wet_cement.png",
 })
-
-
 
 minetest.register_craftitem("basic_materials:silicon", {
 	description = S("Silicon lump"),
@@ -64,9 +60,6 @@ minetest.register_craftitem("basic_materials:energy_crystal_simple", {
 	description = S("Simple energy crystal"),
 	inventory_image = "basic_materials_energy_crystal.png",
 })
-
-
-
 
 minetest.register_craftitem("basic_materials:steel_wire", {
 	description = S("Spool of steel wire"),
