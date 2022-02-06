@@ -7,7 +7,14 @@ if not sound_api then
 	local metatable = {
 		__index = function(_, _)
 			return function(input)
-				minetest.log("warning", "[basic_materials]: sounds not found")
+				minetest.log(
+					"warning",
+					"[basic_materials]: " ..
+					"The sound api submodule for game agnostic sound loading could not be found at " ..
+					basic_materials.modpath .. "/sound_api_core. " ..
+					"documentation for using submodules can be found at https://git-scm.com/docs/git-submodule." ..
+					"defaulting back to mod provided input or nil."
+				)
 				if input then return input else return nil end
 			end
 		end,
