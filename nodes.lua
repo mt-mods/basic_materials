@@ -1,6 +1,19 @@
 local S = minetest.get_translator("basic_materials")
-local sound_api = dofile(basic_materials.modpath .. "/sound_api_core/init.lua")
 local chains_sbox = {type = "fixed",fixed = { -0.1, -0.5, -0.1, 0.1, 0.5, 0.1 }}
+
+local sound_api = loadfile(basic_materials.modpath .. "/sound_api_core/init.lua")
+if not sound_api then
+	sound_api = {}
+	local metatable = {
+		__index = function(_, _)
+			return function(input)
+				minetest.log("warning", "[basic_materials]: sounds not found")
+				if input then return input else return nil end
+			end
+		end,
+	}
+	setmetatable(sound_api, metatable)
+end
 
 minetest.register_node("basic_materials:cement_block", {
 	description = S("Cement"),
