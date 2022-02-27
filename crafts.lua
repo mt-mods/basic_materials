@@ -309,7 +309,7 @@ minetest.register_craft( {
     type = "shapeless",
     output = "basic_materials:terracotta_base 8",
     recipe = {
-        materials.bucket_water,
+        materials.water_bucket,
         materials.clay_lump,
         materials.gravel,
     },
@@ -321,10 +321,10 @@ minetest.register_craft({
     output = "basic_materials:wet_cement 3",
     recipe = {
         materials.dirt,
-        materials.dark_grey,
-        materials.dark_grey,
-        materials.dark_grey,
-        materials.bucket_water
+        materials.dye_dark_grey,
+        materials.dye_dark_grey,
+        materials.dye_dark_grey,
+        materials.water_bucket
     },
     replacements = {{materials.water_bucket, materials.empty_bucket}},
 })
