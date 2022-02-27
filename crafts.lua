@@ -75,7 +75,9 @@ elseif minetest.get_modpath("hades_core") then
         --set this to steel unless hadesextraores is present
         silver_ingot = "hades_core:steel_ingot",
     }
-elseif minetest.get_modpath("hades_core") and minetest.get_modpath("hades_extraores") then
+end
+
+if minetest.get_modpath("hades_core") and minetest.get_modpath("hades_extraores") then
     materials["silver_ingot"] = "hades_extraores:silver_ingot"
 end
 
