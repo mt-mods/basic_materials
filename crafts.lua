@@ -52,6 +52,33 @@ elseif minetest.get_modpath("fl_ores") and minetest.get_modpath("fl_stone") then
         tin_ingot = "fl_ores:tin_ingot",
         silver_ingot = "fl_ores:iron_ingot",
     }
+elseif minetest.get_modpath("hades_core") then
+    materials = {
+        dirt = "fl_topsoil:dirt",
+        sand = "hades_core:fertile_sand",
+        gravel = "hades_core:gravel",
+        steel_ingot = "hades_core:steel_ingot",
+        gold_ingot = "hades_core:gold_ingot",
+        mese_crystal_fragment = "hades_core:mese_crystal_fragment",
+        torch = "hades_torches:torch",
+        diamond = "hades_core:diamond",
+        clay_lump = "hades_core:clay_lump",
+        dye_dark_grey = "dye:dark_grey_dye",
+        copper_ingot = "hades_core:copper_ingot",
+        tin_ingot = "hades_core:tin_ingot",
+        --[[
+            since hades doesnt have buckets or water for the user,
+            using dirt from near water to pull the water out
+        ]]
+        water_bucket = "hades_core:fertile_sand",
+        empty_bucket = "hades_core:dirt",
+        --set this to steel unless hadesextraores is present
+        silver_ingot = "hades_core:steel_ingot",
+    }
+
+    if minetest.get_modpath("hades_extraores") then
+        materials["silver_ingot"] = "hades_extraores:silver_ingot"
+    end
 end
 
 --craft recipes
