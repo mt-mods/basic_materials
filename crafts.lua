@@ -305,32 +305,29 @@ minetest.register_craft( {
     },
 })
 
---i3 does has issues in its craft override with replacements
-if not minetest.get_modpath("i3") then
-    minetest.register_craft( {
-        type = "shapeless",
-        output = "basic_materials:terracotta_base 8",
-        recipe = {
-            materials.bucket_water,
-            materials.clay_lump,
-            materials.gravel,
-        },
-        replacements = {{materials.bucket_water, materials.bucket_empty}},
-    })
+minetest.register_craft( {
+    type = "shapeless",
+    output = "basic_materials:terracotta_base 8",
+    recipe = {
+        materials.bucket_water,
+        materials.clay_lump,
+        materials.gravel,
+    },
+    replacements = {{materials.water_bucket, materials.empty_bucket}},
+})
 
-    minetest.register_craft({
-        type = "shapeless",
-        output = "basic_materials:wet_cement 3",
-        recipe = {
-            materials.dirt,
-            materials.dark_grey,
-            materials.dark_grey,
-            materials.dark_grey,
-            materials.bucket_water
-        },
-        replacements = {{materials.bucket_water, materials.bucket_empty}},
-    })
-end
+minetest.register_craft({
+    type = "shapeless",
+    output = "basic_materials:wet_cement 3",
+    recipe = {
+        materials.dirt,
+        materials.dark_grey,
+        materials.dark_grey,
+        materials.dark_grey,
+        materials.bucket_water
+    },
+    replacements = {{materials.water_bucket, materials.empty_bucket}},
+})
 
 minetest.register_craft( {
     output = "mesecons_materials:silicon 4",
