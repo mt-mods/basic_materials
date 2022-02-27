@@ -106,18 +106,18 @@ minetest.register_craft({
     minetest.register_craft({
         output = "basic_materials:concrete_block 6",
         recipe = {
-            {"group:sand",                "basic_materials:wet_cement", gameconfig_gravel},
+            {"group:sand",                "basic_materials:wet_cement", bm.gameconfig_gravel},
             {"basic_materials:steel_bar", "basic_materials:wet_cement", "basic_materials:steel_bar"},
-            {gameconfig_gravel,            "basic_materials:wet_cement", "group:sand"},
+            {bm.gameconfig_gravel,            "basic_materials:wet_cement", "group:sand"},
         }
     })
 
     minetest.register_craft( {
         output = "basic_materials:motor 2",
         recipe = {
-            { gameconfig_mese_crystal_fragment, "basic_materials:copper_wire", "basic_materials:plastic_sheet" },
-            { gameconfig_copper_ingot,          gameconfig_steel_ingot,         gameconfig_steel_ingot },
-            { gameconfig_mese_crystal_fragment, "basic_materials:copper_wire", "basic_materials:plastic_sheet" }
+            { bm.gameconfig_mese_crystal_fragment, "basic_materials:copper_wire", "basic_materials:plastic_sheet" },
+            { bm.gameconfig_copper_ingot,          bm.gameconfig_steel_ingot,         bm.gameconfig_steel_ingot },
+            { bm.gameconfig_mese_crystal_fragment, "basic_materials:copper_wire", "basic_materials:plastic_sheet" }
         },
         replacements = {
             { "basic_materials:copper_wire", "basic_materials:empty_spool" },
@@ -128,7 +128,7 @@ minetest.register_craft({
     minetest.register_craft( {
         output = "basic_materials:heating_element 2",
         recipe = {
-            { gameconfig_copper_ingot, gameconfig_mese_crystal_fragment, gameconfig_copper_ingot }
+            { bm.gameconfig_copper_ingot, bm.gameconfig_mese_crystal_fragment, bm.gameconfig_copper_ingot }
         },
     })
 
@@ -136,8 +136,8 @@ minetest.register_craft({
         --type = "shapeless",
         output = "basic_materials:energy_crystal_simple 2",
         recipe = {
-            { gameconfig_mese_crystal_fragment, gameconfig_torch, gameconfig_mese_crystal_fragment },
-            { gameconfig_diamond, gameconfig_gold_ingot, gameconfig_diamond }
+            { bm.gameconfig_mese_crystal_fragment, bm.gameconfig_torch, bm.gameconfig_mese_crystal_fragment },
+            { bm.gameconfig_diamond, bm.gameconfig_gold_ingot, bm.gameconfig_diamond }
         },
     })
 
@@ -145,7 +145,7 @@ minetest.register_craft({
         output = "basic_materials:copper_wire 2",
         type = "shapeless",
         recipe = {
-            gameconfig_copper_ingot,
+            bm.gameconfig_copper_ingot,
             "basic_materials:empty_spool",
             "basic_materials:empty_spool",
         },
@@ -155,7 +155,7 @@ minetest.register_craft({
         output = "basic_materials:gold_wire 2",
         type = "shapeless",
         recipe = {
-            gameconfig_gold_ingot,
+            bm.gameconfig_gold_ingot,
             "basic_materials:empty_spool",
             "basic_materials:empty_spool",
         },
@@ -165,7 +165,7 @@ minetest.register_craft({
         output = "basic_materials:steel_wire 2",
         type = "shapeless",
         recipe = {
-            gameconfig_steel_ingot,
+            bm.gameconfig_steel_ingot,
             "basic_materials:empty_spool",
             "basic_materials:empty_spool",
         },
@@ -174,25 +174,25 @@ minetest.register_craft({
     minetest.register_craft( {
         output = "basic_materials:steel_strip 12",
         recipe = {
-            { "", gameconfig_steel_ingot, "" },
-            { gameconfig_steel_ingot, "", "" },
+            { "", bm.gameconfig_steel_ingot, "" },
+            { bm.gameconfig_steel_ingot, "", "" },
         },
     })
 
     minetest.register_craft( {
         output = "basic_materials:copper_strip 12",
         recipe = {
-            { "", gameconfig_copper_ingot, "" },
-            { gameconfig_copper_ingot, "", "" },
+            { "", bm.gameconfig_copper_ingot, "" },
+            { bm.gameconfig_copper_ingot, "", "" },
         },
     })
 
     minetest.register_craft( {
         output = "basic_materials:steel_bar 6",
         recipe = {
-            { "", "", gameconfig_steel_ingot },
-            { "", gameconfig_steel_ingot, "" },
-            { gameconfig_steel_ingot, "", "" },
+            { "", "", bm.gameconfig_steel_ingot },
+            { "", bm.gameconfig_steel_ingot, "" },
+            { bm.gameconfig_steel_ingot, "", "" },
         },
     })
 
@@ -200,26 +200,26 @@ minetest.register_craft({
         output = "basic_materials:padlock 2",
         recipe = {
             { "basic_materials:steel_bar" },
-            { gameconfig_steel_ingot },
-            { gameconfig_steel_ingot },
+            { bm.gameconfig_steel_ingot },
+            { bm.gameconfig_steel_ingot },
         },
     })
 
     minetest.register_craft({
         output = "basic_materials:chainlink_steel 12",
         recipe = {
-            {"", gameconfig_steel_ingot, gameconfig_steel_ingot},
-            { gameconfig_steel_ingot, "", gameconfig_steel_ingot },
-            { gameconfig_steel_ingot, gameconfig_steel_ingot, "" },
+            {"", bm.gameconfig_steel_ingot, bm.gameconfig_steel_ingot},
+            { bm.gameconfig_steel_ingot, "", bm.gameconfig_steel_ingot },
+            { bm.gameconfig_steel_ingot, bm.gameconfig_steel_ingot, "" },
         },
     })
 
     minetest.register_craft( {
         output = "basic_materials:gear_steel 6",
         recipe = {
-            { "", gameconfig_steel_ingot, "" },
-            { gameconfig_steel_ingot,"basic_materials:chainlink_steel", gameconfig_steel_ingot },
-            { "", gameconfig_steel_ingot, "" }
+            { "", bm.gameconfig_steel_ingot, "" },
+            { bm.gameconfig_steel_ingot,"basic_materials:chainlink_steel", bm.gameconfig_steel_ingot },
+            { "", bm.gameconfig_steel_ingot, "" }
         },
     })
 
@@ -228,11 +228,11 @@ minetest.register_craft({
         type = "shapeless",
         output = "basic_materials:terracotta_base 8",
         recipe = {
-            gameconfig_water_bucket,
-            gameconfig_clay_lump,
-            gameconfig_gravel,
+            bm.gameconfig_water_bucket,
+            bm.gameconfig_clay_lump,
+            bm.gameconfig_gravel,
         },
-        replacements = { {gameconfig_water_bucket, gameconfig_empty_bucket}, },
+        replacements = { {bm.gameconfig_water_bucket, bm.gameconfig_empty_bucket}, },
     })
 
 
@@ -240,21 +240,21 @@ minetest.register_craft({
         type = "shapeless",
         output = "basic_materials:wet_cement 3",
         recipe = {
-            gameconfig_dirt,
-            gameconfig_dye_dark_grey,
-            gameconfig_dye_dark_grey,
-            gameconfig_dye_dark_grey,
-            gameconfig_water_bucket
+            bm.gameconfig_dirt,
+            bm.gameconfig_dye_dark_grey,
+            bm.gameconfig_dye_dark_grey,
+            bm.gameconfig_dye_dark_grey,
+            bm.gameconfig_water_bucket
         },
-        replacements = {{gameconfig_water_bucket, gameconfig_empty_bucket},},
+        replacements = {{bm.gameconfig_water_bucket, bm.gameconfig_empty_bucket},},
     })
 
 
     minetest.register_craft( {
         output = "basic_materials:silicon 4",
         recipe = {
-            { gameconfig_sand, gameconfig_sand },
-            { gameconfig_sand, gameconfig_steel_ingot },
+            { bm.gameconfig_sand, bm.gameconfig_sand },
+            { bm.gameconfig_sand, bm.gameconfig_steel_ingot },
         },
     })
 
@@ -262,7 +262,7 @@ minetest.register_craft({
         output = "basic_materials:ic 4",
         recipe = {
             { "basic_materials:silicon", "basic_materials:silicon" },
-            { "basic_materials:silicon", gameconfig_copper_ingot },
+            { "basic_materials:silicon", bm.gameconfig_copper_ingot },
         },
     })
 
@@ -272,9 +272,9 @@ minetest.register_craft({
         minetest.register_craft( {
             output = "basic_materials:brass_ingot 9",
             recipe = {
-            {gameconfig_copper_ingot, gameconfig_tin_ingot, gameconfig_copper_ingot},
-            {gameconfig_gold_ingot, gameconfig_copper_ingot, gameconfig_gold_ingot},
-            {gameconfig_copper_ingot, gameconfig_tin_ingot, gameconfig_copper_ingot},
+            {bm.gameconfig_copper_ingot, bm.gameconfig_tin_ingot, bm.gameconfig_copper_ingot},
+            {bm.gameconfig_gold_ingot, bm.gameconfig_copper_ingot, bm.gameconfig_gold_ingot},
+            {bm.gameconfig_copper_ingot, bm.gameconfig_tin_ingot, bm.gameconfig_copper_ingot},
             },
         })
 
@@ -282,7 +282,7 @@ minetest.register_craft({
             output = "basic_materials:silver_wire 2",
             type = "shapeless",
             recipe = {
-                gameconfig_silver_ingot,
+                bm.gameconfig_silver_ingot,
                 "basic_materials:empty_spool",
                 "basic_materials:empty_spool",
             },
@@ -292,10 +292,11 @@ minetest.register_craft({
             type = "shapeless",
             output = "basic_materials:brass_ingot 3",
             recipe = {
-                gameconfig_copper_ingot,
-                gameconfig_copper_ingot,
+                bm.gameconfig_copper_ingot,
+                bm.gameconfig_copper_ingot,
                 "moreores:silver_ingot",
             },
         })
     end
+
 

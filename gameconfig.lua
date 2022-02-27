@@ -1,65 +1,44 @@
 -- Craft ingredients
 
 
+bm = {}
 -- MineClone2 support
 local mod_mcl_core = minetest.get_modpath("mcl_core") ~= nil
 if mod_mcl_core then
-	gameconfig_dirt = "mcl_core:dirt"
-	gameconfig_sand = "mcl_core:sand"
-	gameconfig_gravel = "mcl_core:gravel"
-	gameconfig_steel_ingot = "mcl_core:iron_ingot"
-	gameconfig_gold_ingot = "mcl_core:gold_ingot"
-	gameconfig_mese_crystal_fragment = "mesecons:redstone"
-	gameconfig_torch = "mcl_torches:torch"
-	gameconfig_diamond = "mcl_core:diamond"
-	gameconfig_clay_lump = "mcl_core:clay_lump"
-	gameconfig_water_bucket = "mcl_buckets:bucket_water"
-	gameconfig_empty_bucket = "mcl_buckets:bucket_empty"
-	gameconfig_dye_dark_grey = "mcl_dye:dark_grey"
+	bm.gameconfig_dirt = "mcl_core:dirt"
+	bm.gameconfig_sand = "mcl_core:sand"
+	bm.gameconfig_gravel = "mcl_core:gravel"
+	bm.gameconfig_steel_ingot = "mcl_core:iron_ingot"
+	bm.gameconfig_gold_ingot = "mcl_core:gold_ingot"
+	bm.gameconfig_mese_crystal_fragment = "mesecons:redstone"
+	bm.gameconfig_torch = "mcl_torches:torch"
+	bm.gameconfig_diamond = "mcl_core:diamond"
+	bm.gameconfig_clay_lump = "mcl_core:clay_lump"
+	bm.gameconfig_water_bucket = "mcl_buckets:bucket_water"
+	bm.gameconfig_empty_bucket = "mcl_buckets:bucket_empty"
+	bm.gameconfig_dye_dark_grey = "mcl_dye:dark_grey"
 	-- No current equivalent so default to iron ingot instead.
-	gameconfig_copper_ingot = "mcl_core:iron_ingot"
-	gameconfig_tin_ingot = "mcl_core:iron_ingot"
-	gameconfig_silver_ingot = "mcl_core:iron_ingot"
---[[
-elseif
-	gameconfig_dirt = 
-	gameconfig_sand = 
-	gameconfig_gravel = 
-	gameconfig_copper_ingot = 
-	gameconfig_steel_ingot = 
-	gameconfig_silver_ingot = 
-	gameconfig_gold_ingot = 
-	gameconfig_tin_ingot = 
-	gameconfig_mese_crystal_fragment = 
-	gameconfig_torch = 
-	gameconfig_diamond = 
-	gameconfig_clay_lump = 
-	gameconfig_water_bucket = 
-	gameconfig_empty_bucket = 
-	gameconfig_dye_dark_grey = 
---]]
+	bm.gameconfig_copper_ingot = "mcl_core:iron_ingot"
+	bm.gameconfig_tin_ingot = "mcl_core:iron_ingot"
+	bm.gameconfig_silver_ingot = "mcl_core:iron_ingot"
 else --fallback to Minetest Game's items.
-	gameconfig_dirt = "default:dirt"
-	gameconfig_sand = "default:sand"
-	gameconfig_gravel = "default:gravel"
-	gameconfig_copper_ingot = "default:copper_ingot"
-	gameconfig_steel_ingot = "default:steel_ingot"
-	gameconfig_gold_ingot = "default:gold_ingot"
-	gameconfig_tin_ingot = "default:tin_ingot"
-	gameconfig_mese_crystal_fragment = "default:mese_crystal_fragment"
-	gameconfig_torch = "default:torch"
-	gameconfig_diamond = "default:diamond"
-	gameconfig_clay_lump = "default:clay_lump"
-	gameconfig_water_bucket = "bucket:bucket_water"
-	gameconfig_empty_bucket = "bucket:bucket_empty"
-	gameconfig_dye_dark_grey = "dye:dark_grey"
+	bm.gameconfig_dirt = "default:dirt"
+	bm.gameconfig_sand = "default:sand"
+	bm.gameconfig_gravel = "default:gravel"
+	bm.gameconfig_copper_ingot = "default:copper_ingot"
+	bm.gameconfig_steel_ingot = "default:steel_ingot"
+	bm.gameconfig_gold_ingot = "default:gold_ingot"
+	bm.gameconfig_tin_ingot = "default:tin_ingot"
+	bm.gameconfig_mese_crystal_fragment = "default:mese_crystal_fragment"
+	bm.gameconfig_torch = "default:torch"
+	bm.gameconfig_diamond = "default:diamond"
+	bm.gameconfig_clay_lump = "default:clay_lump"
+	bm.gameconfig_water_bucket = "bucket:bucket_water"
+	bm.gameconfig_empty_bucket = "bucket:bucket_empty"
+	bm.gameconfig_dye_dark_grey = "dye:dark_grey"
 	-- No current equivalent so default to copper ingot instead.
-	gameconfig_silver_ingot = "default:copper_ingot"
+	bm.gameconfig_silver_ingot = "default:copper_ingot"
 end
-
-
-
-
 
 
 -- Sounds
