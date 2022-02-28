@@ -150,6 +150,13 @@ minetest.register_craft( {
 	},
 })
 
+if have_hades_materials then
+  minetest.clear_craft({
+    type = "shapeless",
+    recipe = {"group:leaves", "group:leaves", "group:leaves", "group:leaves", "group:leaves", "group:leaves"}
+  })
+end
+
 minetest.register_craft({
 	type = "shapeless",
 	output = "basic_materials:oil_extract 2",
@@ -157,11 +164,13 @@ minetest.register_craft({
 })
 
 --cooking recipes
-minetest.register_craft({
-	type = "cooking",
-	output = "basic_materials:plastic_sheet",
-	recipe = "basic_materials:paraffin",
-})
+if not have_hades_materials then
+  minetest.register_craft({
+    type = "cooking",
+    output = "basic_materials:plastic_sheet",
+    recipe = "basic_materials:paraffin",
+  })
+end
 
 minetest.register_craft({
 	type = "cooking",
