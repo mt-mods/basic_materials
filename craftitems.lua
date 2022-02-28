@@ -1,9 +1,15 @@
 local S = minetest.get_translator("basic_materials")
 
-minetest.register_craftitem("basic_materials:plastic_sheet", {
-	description = S("Plastic sheet"),
-	inventory_image = "basic_materials_plastic_sheet.png",
-})
+local have_hades_materials = minetest.get_modpath("hades_materials")
+
+if not have_hades_materials then
+  minetest.register_craftitem("basic_materials:plastic_sheet", {
+    description = S("Plastic sheet"),
+    inventory_image = "basic_materials_plastic_sheet.png",
+  })
+else
+  minetest.register_alias("basic_materials:plastic_sheet", "hades_materials:plastic_sheeting");
+end
 
 minetest.register_craftitem("basic_materials:plastic_strip", {
 	description = S("Plastic strips"),
@@ -36,10 +42,14 @@ minetest.register_craftitem("basic_materials:wet_cement", {
 	inventory_image = "basic_materials_wet_cement.png",
 })
 
-minetest.register_craftitem("basic_materials:silicon", {
-	description = S("Silicon lump"),
-	inventory_image = "basic_materials_silicon.png",
-})
+if not have_hades_materials then
+  minetest.register_craftitem("basic_materials:silicon", {
+    description = S("Silicon lump"),
+    inventory_image = "basic_materials_silicon.png",
+  })
+else
+  minetest.register_alias("hades_extramaterials:silicon", "hades_materials:silicon");
+end
 
 minetest.register_craftitem("basic_materials:ic", {
 	description = S("Simple Integrated Circuit"),

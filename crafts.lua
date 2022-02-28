@@ -54,7 +54,7 @@ elseif minetest.get_modpath("fl_ores") and minetest.get_modpath("fl_stone") then
     }
 elseif minetest.get_modpath("hades_core") then
     materials = {
-        dirt = "fl_topsoil:dirt",
+        dirt = "hades_core:dirt",
         sand = "hades_core:fertile_sand",
         gravel = "hades_core:gravel",
         steel_ingot = "hades_core:steel_ingot",
@@ -76,10 +76,16 @@ elseif minetest.get_modpath("hades_core") then
         silver_ingot = "hades_core:steel_ingot",
     }
 
+    if minetest.get_modpath("hades_bucket") then
+        materials["water_bucket"] = "hades_bucket:bucket_water"
+        materials["empty_bucket"] = "hades_bucket:bucket_empty"
+    end
     if minetest.get_modpath("hades_extraores") then
         materials["silver_ingot"] = "hades_extraores:silver_ingot"
     end
 end
+
+local have_hades_materials = minetest.get_modpath("hades_materials")
 
 --craft recipes
 minetest.register_craft({
@@ -332,13 +338,15 @@ if not minetest.get_modpath("i3") then
     })
 end
 
-minetest.register_craft( {
-    output = "mesecons_materials:silicon 4",
-    recipe = {
-        { materials.sand, materials.sand },
-        { materials.sand, materials.steel_ingot },
-    },
-})
+if not have_hades_materials then
+    minetest.register_craft( {
+        output = "mesecons_materials:silicon 4",
+        recipe = {
+            { materials.sand, materials.sand },
+            { materials.sand, materials.steel_ingot },
+        },
+    })
+end
 
 minetest.register_craft( {
     output = "basic_materials:ic 4",
@@ -362,7 +370,7 @@ minetest.register_craft( {
     output = "basic_materials:silver_wire 2",
     type = "shapeless",
     recipe = {
-        "moreores:silver_ingot",
+        materials.silver_ingot,
         "basic_materials:empty_spool",
         "basic_materials:empty_spool",
     },
