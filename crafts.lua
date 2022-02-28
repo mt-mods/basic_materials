@@ -13,6 +13,7 @@ local materials = {
     water_bucket = "bucket:bucket_water",
     empty_bucket = "bucket:bucket_empty",
     dye_dark_grey = "dye:dark_grey",
+    silicon = "mesecons_materials:silicon",
 }
 
 if minetest.get_modpath("mcl_core") then
@@ -33,6 +34,7 @@ if minetest.get_modpath("mcl_core") then
         copper_ingot = "mcl_core:iron_ingot",
         tin_ingot = "mcl_core:iron_ingot",
         silver_ingot = "mcl_core:iron_ingot",
+        silicon = "mesecons_materials:silicon",
     }
 elseif minetest.get_modpath("fl_ores") and minetest.get_modpath("fl_stone") then
     materials = {
@@ -51,6 +53,7 @@ elseif minetest.get_modpath("fl_ores") and minetest.get_modpath("fl_stone") then
         copper_ingot = "fl_ores:copper_ingot",
         tin_ingot = "fl_ores:tin_ingot",
         silver_ingot = "fl_ores:iron_ingot",
+        silicon = "mesecons_materials:silicon",
     }
 elseif minetest.get_modpath("hades_core") then
     materials = {
@@ -63,17 +66,18 @@ elseif minetest.get_modpath("hades_core") then
         torch = "hades_torches:torch",
         diamond = "hades_core:diamond",
         clay_lump = "hades_core:clay_lump",
-        dye_dark_grey = "dye:dark_grey_dye",
+        dye_dark_grey = "dye:dark_grey",
         copper_ingot = "hades_core:copper_ingot",
         tin_ingot = "hades_core:tin_ingot",
         --[[
             since hades doesnt have buckets or water for the user,
             using dirt from near water to pull the water out
         ]]
-        water_bucket = "hades_core:fertile_sand",
-        empty_bucket = "hades_core:dirt",
+        water_bucket = "hades_core:dirt",
+        empty_bucket = "hades_core:fertile_sand",
         --set this to steel unless hadesextraores is present
         silver_ingot = "hades_core:steel_ingot",
+        silicon = "hades_materials:silicon",
     }
 
     if minetest.get_modpath("hades_bucket") then
@@ -337,7 +341,7 @@ minetest.register_craft({
 
 if not have_hades_materials then
     minetest.register_craft( {
-        output = "mesecons_materials:silicon 4",
+        output = materials.silicon.." 4",
         recipe = {
             { materials.sand, materials.sand },
             { materials.sand, materials.steel_ingot },
@@ -348,8 +352,8 @@ end
 minetest.register_craft( {
     output = "basic_materials:ic 4",
     recipe = {
-        { "mesecons_materials:silicon", "mesecons_materials:silicon" },
-        { "mesecons_materials:silicon", materials.copper_ingot },
+        { materials.silicon, materials.silicon },
+        { materials.silicon, materials.copper_ingot },
     },
 })
 
