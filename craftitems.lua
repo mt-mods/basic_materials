@@ -1,8 +1,8 @@
 local S = minetest.get_translator("basic_materials")
 
 minetest.register_craftitem("basic_materials:plastic_sheet", {
-  description = S("Plastic sheet"),
-  inventory_image = "basic_materials_plastic_sheet.png",
+	description = S("Plastic sheet"),
+	inventory_image = "basic_materials_plastic_sheet.png",
 })
 
 minetest.register_craftitem("basic_materials:plastic_strip", {
@@ -22,8 +22,8 @@ minetest.register_craftitem("basic_materials:oil_extract", {
 })
 
 minetest.register_craftitem("basic_materials:paraffin", {
-  description = S("Unprocessed paraffin"),
-  inventory_image = "basic_materials_paraffin.png",
+	description = S("Unprocessed paraffin"),
+	inventory_image = "basic_materials_paraffin.png",
 })
 
 minetest.register_craftitem("basic_materials:terracotta_base", {
@@ -37,8 +37,8 @@ minetest.register_craftitem("basic_materials:wet_cement", {
 })
 
 minetest.register_craftitem("basic_materials:silicon", {
-  description = S("Silicon lump"),
-  inventory_image = "basic_materials_silicon.png",
+	description = S("Silicon lump"),
+	inventory_image = "basic_materials_silicon.png",
 })
 
 minetest.register_craftitem("basic_materials:ic", {
@@ -130,8 +130,8 @@ minetest.register_craftitem("basic_materials:padlock", {
 })
 
 if minetest.get_modpath("hades_materials") then
-  minetest.register_alias_force("basic_materials:plastic_sheet", "hades_materials:plastic_sheeting")
-  minetest.register_alias_force("basic_materials:paraffin", "hades_materials:plastic_base")
-  minetest.register_alias_force("hades_extramaterials:silicon", "hades_materials:silicon")
+	minetest.register_alias_force("basic_materials:plastic_sheet", "hades_materials:plastic_sheeting")
+	minetest.register_alias_force("basic_materials:paraffin", "hades_materials:plastic_base")
+	minetest.register_alias_force("hades_extramaterials:silicon", "hades_materials:silicon")
 end
 
