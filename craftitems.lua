@@ -1,15 +1,9 @@
 local S = minetest.get_translator("basic_materials")
 
-local have_hades_materials = minetest.get_modpath("hades_materials")
-
-if not have_hades_materials then
-  minetest.register_craftitem("basic_materials:plastic_sheet", {
-    description = S("Plastic sheet"),
-    inventory_image = "basic_materials_plastic_sheet.png",
-  })
-else
-  minetest.register_alias("basic_materials:plastic_sheet", "hades_materials:plastic_sheeting")
-end
+minetest.register_craftitem("basic_materials:plastic_sheet", {
+  description = S("Plastic sheet"),
+  inventory_image = "basic_materials_plastic_sheet.png",
+})
 
 minetest.register_craftitem("basic_materials:plastic_strip", {
 	description = S("Plastic strips"),
@@ -27,14 +21,10 @@ minetest.register_craftitem("basic_materials:oil_extract", {
 	inventory_image = "basic_materials_oil_extract.png",
 })
 
-if not have_hades_materials then
-  minetest.register_craftitem("basic_materials:paraffin", {
-    description = S("Unprocessed paraffin"),
-    inventory_image = "basic_materials_paraffin.png",
-  })
-else
-  minetest.register_alias("basic_materials:paraffin", "hades_materials:plastic_base")
-end
+minetest.register_craftitem("basic_materials:paraffin", {
+  description = S("Unprocessed paraffin"),
+  inventory_image = "basic_materials_paraffin.png",
+})
 
 minetest.register_craftitem("basic_materials:terracotta_base", {
 	description = S("Uncooked Terracotta Base"),
@@ -46,14 +36,10 @@ minetest.register_craftitem("basic_materials:wet_cement", {
 	inventory_image = "basic_materials_wet_cement.png",
 })
 
-if not have_hades_materials then
-  minetest.register_craftitem("basic_materials:silicon", {
-    description = S("Silicon lump"),
-    inventory_image = "basic_materials_silicon.png",
-  })
-else
-  minetest.register_alias("hades_extramaterials:silicon", "hades_materials:silicon")
-end
+minetest.register_craftitem("basic_materials:silicon", {
+  description = S("Silicon lump"),
+  inventory_image = "basic_materials_silicon.png",
+})
 
 minetest.register_craftitem("basic_materials:ic", {
 	description = S("Simple Integrated Circuit"),
@@ -142,3 +128,10 @@ minetest.register_craftitem("basic_materials:padlock", {
 	description = S("Padlock"),
 	inventory_image = "basic_materials_padlock.png"
 })
+
+if minetest.get_modpath("hades_materials") then
+  minetest.register_alias_force("basic_materials:plastic_sheet", "hades_materials:plastic_sheeting")
+  minetest.register_alias_force("basic_materials:paraffin", "hades_materials:plastic_base")
+  minetest.register_alias_force("hades_extramaterials:silicon", "hades_materials:silicon")
+end
+
