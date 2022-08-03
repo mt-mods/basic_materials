@@ -70,7 +70,7 @@ elseif minetest.get_modpath("hades_core") then
 		torch = "hades_torches:torch",
 		diamond = "hades_core:diamond",
 		clay_lump = "hades_core:clay_lump",
-		dye_dark_grey = "dye:dark_grey",
+		dye_dark_grey = "hades_dye:dark_grey",
 		copper_ingot = "hades_core:copper_ingot",
 		tin_ingot = "hades_core:tin_ingot",
 		--[[
