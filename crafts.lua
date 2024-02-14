@@ -527,7 +527,7 @@ register_craft({
 
 if not have_hades_materials then
 	register_craft( {
-		output = materials.silicon.." 4",
+		output = "basic_materials:silicon 4",
 		recipe = {
 			{materials.sand, materials.sand},
 			{materials.sand, materials.steel_ingot},
