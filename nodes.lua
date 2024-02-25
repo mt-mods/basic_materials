@@ -1,5 +1,5 @@
 local S = minetest.get_translator("basic_materials")
-local sound_api = dofile(basic_materials.modpath .. "/sound_api_core/init.lua")
+local sound_api = xcompat.sounds
 local chains_sbox = {type = "fixed",fixed = { -0.1, -0.5, -0.1, 0.1, 0.5, 0.1 }}
 
 minetest.register_node("basic_materials:cement_block", {
