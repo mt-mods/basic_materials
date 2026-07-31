@@ -13,5 +13,5 @@ Provides a small selection of "basic" materials and items, things like steel bar
 
 ## License
 
-Code: [LGLP v3](https://www.gnu.org/licenses/lgpl-3.0#license-text)
+Code: [LGPL v3](https://www.gnu.org/licenses/lgpl-3.0#license-text)
 Media: [CC-by-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode.txt)
