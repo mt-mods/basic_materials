@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-31 10:11-0500\n"
-"PO-Revision-Date: 2026-10-20 14:47+0000\n"
+"PO-Revision-Date: 2026-10-20 15:22+0000\n"
 "Last-Translator: Fdm66 <fabriziomazzeodiaz79@gmail.com>\n"
 "Language-Team: Spanish <https://translate.luanti.ch/projects/mt-mods/"
 "basic_materials/es/>\n"
@@ -21,15 +21,15 @@ msgstr ""
 
 #: craftitems.lua:4
 msgid "Plastic sheet"
-msgstr "Lámina de Plastico"
+msgstr "lámina de plastico"
 
 #: craftitems.lua:9
 msgid "Plastic strips"
-msgstr "Tiras de Plastico"
+msgstr "tiras de plastico"
 
 #: craftitems.lua:15
 msgid "Empty wire spool"
-msgstr "Bobina de cable vacia"
+msgstr "bobina de cable vacia"
 
 #: craftitems.lua:20
 msgid "Oil extract"
