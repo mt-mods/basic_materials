@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-31 10:11-0500\n"
-"PO-Revision-Date: 2026-10-20 14:22+0000\n"
+"PO-Revision-Date: 2026-10-20 14:47+0000\n"
 "Last-Translator: Fdm66 <fabriziomazzeodiaz79@gmail.com>\n"
 "Language-Team: Spanish <https://translate.luanti.ch/projects/mt-mods/"
 "basic_materials/es/>\n"
@@ -49,124 +49,124 @@ msgstr "cemento fresco"
 
 #: craftitems.lua:40
 msgid "Silicon lump"
-msgstr ""
+msgstr "masa de silicio"
 
 #: craftitems.lua:45
 msgid "Simple Integrated Circuit"
-msgstr ""
+msgstr "circuito integrado simple"
 
 #: craftitems.lua:50
 msgid "Simple Motor"
-msgstr ""
+msgstr "motor simple"
 
 #: craftitems.lua:55
 msgid "Heating element"
-msgstr ""
+msgstr "elemento calefactor"
 
 #: craftitems.lua:60
 msgid "Simple energy crystal"
-msgstr ""
+msgstr "cristal de energía simple"
 
 #: craftitems.lua:65
 msgid "Spool of steel wire"
-msgstr ""
+msgstr "bobina de alambre de acero"
 
 #: craftitems.lua:71
 msgid "Spool of copper wire"
-msgstr ""
+msgstr "bobina de alambre de cobre"
 
 #: craftitems.lua:77
 msgid "Spool of silver wire"
-msgstr ""
+msgstr "bobina de alambre de plata"
 
 #: craftitems.lua:83
 msgid "Spool of gold wire"
-msgstr ""
+msgstr "bobina de alambre de oro"
 
 #: craftitems.lua:89
 msgid "Spool of stainless steel wire"
-msgstr ""
+msgstr "bobina de alambre de acero inoxidable"
 
 #: craftitems.lua:95
 msgid "Spool of aluminum wire"
-msgstr ""
+msgstr "bobina de alambre de aluminio"
 
 #: craftitems.lua:101
 msgid "Steel Strip"
-msgstr ""
+msgstr "tira de acero"
 
 #: craftitems.lua:107
 msgid "Copper Strip"
-msgstr ""
+msgstr "tira de cobre"
 
 #: craftitems.lua:113
 msgid "Lead Strip"
-msgstr ""
+msgstr "tira de plomo"
 
 #: craftitems.lua:119
 msgid "Gold Strip"
-msgstr ""
+msgstr "tira de oro"
 
 #: craftitems.lua:125
 msgid "Stainless Steel Strip"
-msgstr ""
+msgstr "tira de acero inoxidable"
 
 #: craftitems.lua:131
 msgid "Aluminum Strip"
-msgstr ""
+msgstr "tira de aluminio"
 
 #: craftitems.lua:137
 msgid "Steel Bar"
-msgstr ""
+msgstr "barra de acero"
 
 #: craftitems.lua:142
 msgid "Carbon Steel Bar"
-msgstr ""
+msgstr "barra de acero al carbono"
 
 #: craftitems.lua:147
 msgid "Stainless Steel Bar"
-msgstr ""
+msgstr "barra de acero inoxidable"
 
 #: craftitems.lua:152
 msgid "Aluminum Bar"
-msgstr ""
+msgstr "barra de aluminio"
 
 #: craftitems.lua:157
 msgid "Chainlinks (brass)"
-msgstr ""
+msgstr "eslabones de cadena (latón)"
 
 #: craftitems.lua:163
 msgid "Chainlinks (steel)"
-msgstr ""
+msgstr "eslabones de cadena (acero)"
 
 #: craftitems.lua:169
 msgid "Brass Ingot"
-msgstr ""
+msgstr "lingote de latón"
 
 #: craftitems.lua:174
 msgid "Steel gear"
-msgstr ""
+msgstr "engranaje de acero"
 
 #: craftitems.lua:179
 msgid "Padlock"
-msgstr ""
+msgstr "candado"
 
 #: nodes.lua:6
 msgid "Cement"
-msgstr ""
+msgstr "cemento"
 
 #: nodes.lua:15
 msgid "Concrete Block"
-msgstr ""
+msgstr "bloque de concreto"
 
 #: nodes.lua:24
 msgid "Chain (steel, hanging)"
-msgstr ""
+msgstr "cadena (acero, colgante)"
 
 #: nodes.lua:40
 msgid "Chain (brass, hanging)"
-msgstr ""
+msgstr "cadena (latón, colgante)"
 
 #: nodes.lua:56
 msgid "Brass Block"
-msgstr ""
+msgstr "bloque de latón"
